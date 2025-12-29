@@ -1,0 +1,21 @@
+name: ld_gcn
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.4.1
+  - pytorch-cuda=12.4
+  - numpy=1.26
+  - pandas>=2.2.3
+  - scipy>=1.14.1
+  - matplotlib
+  - scikit-learn
+  - pyg>=2.6.1
+  - jupyter
+  - ipykernel
+
+  - pip:
+      - -e .

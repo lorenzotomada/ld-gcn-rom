@@ -1,0 +1,27 @@
+net_name: 'lid_driven_cavity'
+conv: 'GMMConv'
+skip: 1
+rate: 80
+time_rate: 50
+dt: 0.05
+sparse_method: 'L1_mean'
+ffn: 200
+nodes: 50
+bottleneck_dim: 3
+in_channels: 2
+tolerance: 1e-6
+learning_rate: 0.001
+layer_vec: [50, 80, 80, 80, 50]
+weight_decay: 1e-05
+max_epochs: 200 # 2000 with Adam, then 200 for LBFGS
+comp: 1
+miles: []
+gamma: 0.0001
+num_nodes: 500
+continuous_dependence: True
+cross_validation: True
+changing_ic: True
+decoder_dynamics: True
+interpolate_signals: True
+minibatch: 25
+seed: 22

@@ -1,0 +1,27 @@
+net_name: 'moving_hole_advection'
+conv: 'GMMConv' #GATConv or GMMConv
+skip: 1
+rate: 75
+time_rate: 75
+dt: 1e-2
+sparse_method: 'L1_mean'
+ffn: 200
+nodes: 50
+continuous_dependence: True
+bottleneck_dim: 15
+in_channels: 2
+tolerance: 1e-6
+learning_rate: 0.001
+layer_vec: [50, 80, 100, 80, 50]
+weight_decay: 1e-05
+max_epochs: 100 # 1500 ADAM, 100 LBFGS
+comp: 1
+miles: []
+gamma: 0.0001
+num_nodes: 0
+cross_validation: True
+changing_ic: True
+decoder_dynamics: True
+interpolate_signals: True
+minibatch: 25 # either null or an integer
+seed: 22

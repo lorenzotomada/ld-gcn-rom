@@ -1,0 +1,27 @@
+net_name: 'square_advection'
+conv: 'GMMConv'
+skip: 1
+rate: 75
+time_rate: 75
+dt: 1e-2
+sparse_method: 'L1_mean'
+ffn: 200
+nodes: 50
+continuous_dependence: True
+bottleneck_dim: 3
+in_channels: 2
+tolerance: 1e-6
+learning_rate: 0.001
+layer_vec: [50, 80, 100, 80, 50] # Layers of NN_dyn
+weight_decay: 1e-05
+max_epochs: 1500 # 1500 + 100
+comp: 1
+miles: []
+gamma: 0.0001
+num_nodes: 0
+cross_validation: True
+changing_ic: True # Does the ic change with the parameter?
+decoder_dynamics: True # Should the decoder depend on time as well?
+interpolate_signals: True
+minibatch: 25
+seed: 22
