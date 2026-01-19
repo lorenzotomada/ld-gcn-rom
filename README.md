@@ -17,7 +17,18 @@ The datasets are not included in this repo since they are too heavy.
 To create them, it is necessary to install [FEniCS](https://fenicsproject.org/download/archive/) and [RBniCS](https://www.rbnicsproject.org/).
 
 ## Cite LD-GCN
-If you use LD-GCN for you research, you are encouraged to cite the original paper.
+If you use LD-GCN for you research, you are encouraged to cite the paper using
+```
+@misc{tomada2026latentdynamicsgraphconvolutional,
+      title={Latent Dynamics Graph Convolutional Networks for model order reduction of parameterized time-dependent PDEs}, 
+      author={Lorenzo Tomada and Federico Pichi and Gianluigi Rozza},
+      year={2026},
+      eprint={2601.11259},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2601.11259}, 
+}
+```
 
 ## Authors
 - Lorenzo Tomada (ltomada@sissa.it)
